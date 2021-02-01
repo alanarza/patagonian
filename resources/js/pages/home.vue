@@ -1,12 +1,13 @@
 <template>
-	<div class="center content-inputs">
-		<h1>Hola como estas</h1>
+    <div class="center">
 
-		<vs-input
-        success
-        v-model="value"
-        placeholder="Success" />
-	</div>
+        <h1>Buscar musica en spotify</h1> <br>
+        <vs-input
+            label="Name"
+            v-model="value"
+            placeholder="Evan You"
+        />
+    </div>
 </template>
 
 <script>
@@ -18,3 +19,13 @@ export default {
     },
 }
 </script>
+
+<style>
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+</style>
